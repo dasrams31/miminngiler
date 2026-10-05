@@ -40,6 +40,7 @@ function cardHTML(p){
     + '<div class="code-row"><code>'+p.code+'</code>'
     + '<button class="copy-btn" data-code="'+p.code+'">'+copyIcon()+'Salin Kode</button></div>'
     + '<a class="buy-btn" href="'+p.link+'" target="_blank" rel="noopener nofollow">🛒 Beli di Shopee</a>'
+    + '<a class="detail-btn" href="'+detail+'">📝 Lihat Detail</a>'
     + '</div></article>';
 }
 

@@ -191,6 +191,12 @@ a{color:inherit}
 }
 .buy-btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--yellow-ink)}
 .buy-btn:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--yellow-ink)}
+.detail-btn{
+  display:block;text-align:center;margin-top:.6rem;color:var(--yellow);
+  font-weight:700;text-decoration:none;border-radius:14px;padding:.7rem;
+  border:2px dashed var(--yellow);
+}
+.detail-btn:hover{background:rgba(255,217,59,.12)}
 .empty{text-align:center;color:var(--muted);padding:2rem}
 
 /* howto */
