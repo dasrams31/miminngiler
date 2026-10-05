@@ -29,12 +29,13 @@ function thumbHTML(p){
 }
 
 function cardHTML(p){
+  const detail = 'p-'+p.id+'.html';
   return '<article class="card reveal">'
     + '<div class="sticker">'+p.badge+'</div>'
-    + thumbHTML(p)
+    + '<a class="cardlink" href="'+detail+'" aria-label="Detail '+p.name+'">'+thumbHTML(p)+'</a>'
     + '<div class="card-body">'
     + '<span class="cat">'+p.category+'</span>'
-    + '<h3>'+p.name+'</h3>'
+    + '<h3><a class="cardlink" href="'+detail+'">'+p.name+'</a></h3>'
     + '<p class="desc">'+p.desc+'</p>'
     + '<div class="code-row"><code>'+p.code+'</code>'
     + '<button class="copy-btn" data-code="'+p.code+'">'+copyIcon()+'Salin Kode</button></div>'
